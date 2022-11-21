@@ -13,9 +13,9 @@ const Header = () => {
         <div className="container">
           <div className="header__top">
             <div className="header__nav">
-              <div className="header__nav logo">
+              <div className="header__nav">
                 <h1 className="logo">
-                  <span className=" logo logo--bold">dress</span>note
+                  <span className=" logo logo-bold">dress</span>note
                 </h1>
               </div>
               <ul className="header__nav header-nav">
