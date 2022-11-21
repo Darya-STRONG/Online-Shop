@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Carousel from 'react-bootstrap/Carousel';
 import "./Main.styles.scss";
+import {HeartFavorites} from '../../assets/img/icons';
+
 
 import desigual from "../../assets/img/slider-new-arrivals/desigual.jpg";
 import monki from "../../assets/img/slider-new-arrivals/monki.jpg";
@@ -12,6 +14,7 @@ export default class MainCarousel extends Component {
     return (
       <Carousel className="container">
         <Carousel.Item>
+            <a href="" className="heart-favorites">{<HeartFavorites/>}</a>
             <img src={zara1} alt="zara1" />
             <Carousel.Caption>
             <div className='card_four__content'>
@@ -23,6 +26,7 @@ export default class MainCarousel extends Component {
         </Carousel.Item>
 
         <Carousel.Item>
+          <a href="" className="heart-favorites">{<HeartFavorites/>}</a>
           <img className="d-block w-255px" src={desigual} alt="desigual" />
           <Carousel.Caption>
           <div className='card_four__content'>
@@ -34,6 +38,7 @@ export default class MainCarousel extends Component {
         </Carousel.Item>
 
         <Carousel.Item>
+          <a href="" className="heart-favorites">{<HeartFavorites/>}</a>
           <img className="d-block w-255px" src={zara} alt="zara" />
           <Carousel.Caption>
           <div className='card_four__content'>
@@ -45,6 +50,7 @@ export default class MainCarousel extends Component {
         </Carousel.Item>
 
         <Carousel.Item>
+          <a href="" className="heart-favorites">{<HeartFavorites/>}</a>
           <img className="d-block w-255px" src={monki} alt="monki" />
           <Carousel.Caption>
           <div className='card_four__content'>

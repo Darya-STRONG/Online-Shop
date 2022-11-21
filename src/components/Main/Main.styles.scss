@@ -41,6 +41,17 @@
     display: flex;
     column-gap: 20px;
   }
+  &-item {
+    position: relative;
+
+  }
+}
+
+.heart-favorites {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  padding: 16px;
 }
 
 .card_four__content{
