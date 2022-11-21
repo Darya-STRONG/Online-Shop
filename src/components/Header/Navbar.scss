@@ -1,0 +1,28 @@
+@import url("../../scss/base.scss");
+@import url("../../scss/styles.scss");
+
+
+.navbar {
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Open Sans Semibold';
+  font-weight: 600;
+
+
+  &__left {
+    display: flex;
+    justify-content: space-between;
+    width: 559px;
+  }
+  &__right {
+    display: flex;
+    column-gap: 10px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+  }
+}

@@ -1,0 +1,133 @@
+@import url("../../scss/base.scss");
+@import url("../../scss/styles.scss");
+
+.container-main {
+  background-image: url("../../assets/img/main-banners/top-banner.jpg");
+  padding-top: 312px;
+  padding-bottom:100px ;
+}
+.main {
+  &__cards {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+  }
+  &__card {
+    background-color: #32313A;
+  }
+}
+
+.card__text {
+  font-family: 'Open Sans Semibold';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.carousel {
+  &-inner {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 30px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 30px 0px 0px;
+  }
+  &__arrow {
+    display: flex;
+    column-gap: 20px;
+  }
+}
+
+.card_four__content{
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  padding-top: 14px;
+  color: #56555D;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.banner {
+ &__center{
+  display: flex;
+  column-gap: 10px;
+  padding-top:100px;
+}
+  &__bottom {
+  padding-top:170px;
+  }
+}
+
+.price {
+  display: flex;
+  column-gap: 8px;
+}
+.promotional-price {
+  color: #DA2E3F;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  column-gap: 126px;
+  &__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+  }
+  &__title {
+    font-family: 'Merriweather';
+    font-size: 36px;
+    line-height: 46px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 22px;
+    color: #6E6D74;
+  }
+  &__button-shop {
+    font-family: 'Open Sans Semibold';
+    width: 190px;
+    height: 36px; 
+    background-color: #32313A;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+
+.brands {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.brand_button{
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration-line:underline;
+  text-decoration-color:#32313A;
+  color: #32313A;
+}
+
+
+
+

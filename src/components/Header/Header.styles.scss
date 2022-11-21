@@ -1,0 +1,55 @@
+@import url("../../scss/base.scss");
+@import url("../../scss/styles.scss");
+
+.header {
+    background:#32313A;
+    width: 100%;
+    padding:22px 0px;
+  &__nav {
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    &.header-nav {
+      align-items: center;
+      width: 100px;
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    padding: 18px 0;
+    background: #ED83A8;
+  }
+
+}
+
+.container-stock {
+  &__text {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+
+  &__button {
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: underline;
+  }
+}
+
+
+.logo {
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  &--bold {
+
+  }
+}
+
+
+

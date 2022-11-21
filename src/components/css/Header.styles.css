@@ -1,0 +1,33 @@
+.header {
+  margin-left: 165px;
+  margin-right: 165px;
+}
+
+.header__wrapper {
+  background: #32313A;
+}
+
+.header__part1__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #32313A;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header__group1_nav {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  width: 100px;
+}
+/*# sourceMappingURL=Header.styles.css.map */
