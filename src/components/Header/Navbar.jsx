@@ -3,6 +3,7 @@ import "./Navbar.scss";
 
 import { Down } from "../../assets/img/icons";
 import { Search } from "../../assets/img/icons";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -10,27 +11,27 @@ function Navbar() {
       <div className="navbar__left">
         <ul className="navbar__left navbar__list">
           <div className="navbar__item">
-            <li className="navbar__link">New in </li>
+          <NavLink className="navbar__link" to="/New-in">New in</NavLink>
             <Down />
           </div>
           <div className="navbar__item">
-            <li className="navbar__link">Clothing</li>
+            <NavLink className="navbar__link" to="/catalog">Clothing</NavLink>
             <Down />
           </div>
           <div className="navbar__item">
-            <li className="navbar__link">Shoes</li>
+            <NavLink className="navbar__link" to="/Shoes">Shoes</NavLink>
             <Down />
           </div>
           <div className="navbar__item">
-            <li className="navbar__link">Accessories</li>
+            <NavLink className="navbar__link" to="/Accessories">Accessories</NavLink>
             <Down />
           </div>
           <div className="navbar__item">
-            <li className="navbar__link">Brands</li>
+            <NavLink className="navbar__link" to="/Brands">Brands</NavLink>
             <Down />
           </div>
           <div className="navbar__item">
-            <li className="navbar__link">Sale</li>
+          <NavLink className="navbar__link" to="/Sale">Sale</NavLink>
             <Down />
           </div>
         </ul>

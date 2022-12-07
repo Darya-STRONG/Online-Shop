@@ -1,0 +1,35 @@
+@import url("../../scss/base.scss");
+@import url("../../scss/styles.scss");
+
+
+.clothing {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 30px;
+  width: 825px;
+  margin: 0 auto;
+
+  &__image {
+    width: 255px;
+    height: 384px;
+  }
+  &__title{
+    width: 250px;
+  }
+  &__description {
+    width: 250px;
+  }
+  &__content {
+    display: flex;
+    flex-flow: column;
+    row-gap: 10px;
+  }
+}
+
+.spinner {
+   position: absolute;           
+   top: 50%;
+   left: 46%;                       
+}
+
