@@ -1,6 +1,9 @@
 @import url("../../scss/base.scss");
 @import url("../../scss/styles.scss");
 
+@import "/node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
 .container-main {
   background-image: url("../../assets/img/main-banners/top-banner.jpg");
   padding-top: 312px;
@@ -26,32 +29,17 @@
   text-align: center;
 }
 
-.carousel {
-  &-inner {
-    display: flex;
-    justify-content: space-around;
-    column-gap: 30px;
-  }
-  &__content {
-    display: flex;
-    justify-content: space-between;
-    padding: 100px 30px 0px 0px;
-  }
-  &__arrow {
-    display: flex;
-    column-gap: 20px;
-  }
-  &-item {
-    position: relative;
-
-  }
-}
-
 .heart-favorites {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
   display: inline-block;
   position: absolute;
-  right: 0px;
-  padding: 16px;
+  border-style: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  top: 12px;
+  right: 12px;
 }
 
 .card_four__content{
@@ -119,7 +107,6 @@
   }
 }
 
-
 .brands {
   display: flex;
   padding-top: 100px;
@@ -138,6 +125,37 @@
   text-decoration-color:#32313A;
   color: #32313A;
 }
+
+.glide {
+  &__slide {
+    width: 255px !important;
+    position: relative;
+    margin-left: 20px;
+    
+  }
+  &__slides{
+    justify-content: space-between;
+    // width: 1110px !important; 
+  }
+  &__title {
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+  &__arrows {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__arrow{
+    position: static;
+    box-shadow: none;
+  }
+}
+
+.fix-img {
+  max-width: 100%;
+}
+
+
 
 
 

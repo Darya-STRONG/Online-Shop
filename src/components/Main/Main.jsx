@@ -1,7 +1,7 @@
 import React from "react";
 import "./Main.styles.scss";
-import MainCarousel from "./MainCarousel";
-import MainCarouselCopy from "./MainCarouselCopy";
+import GlideCarousel from "./GlideCarousel";
+// import MainCarouselCopy from "./MainCarouselCopy";
 
 import { ArrowLeft } from "../../assets/img/icons";
 import { ArrowRight } from "../../assets/img/icons";
@@ -57,19 +57,9 @@ function Main() {
           </div>
         </div>
       </div>
-      <div>
-        <div className="container carousel__content">
-          <h1 className="carousel__title">New arrivals</h1>
-          <div className="carousel__arrow">
-            <a href="#">
-              <ArrowLeft />
-            </a>
-            <a href="#">
-              <ArrowRight />
-            </a>
-          </div>
-        </div>
-        <MainCarousel />
+      <div className="container">
+        <h1 className="glide__title">New arrivals</h1>
+        <GlideCarousel/>
       </div>
 
       <div className="container banner__center">
@@ -77,19 +67,9 @@ function Main() {
         <img src={BannerRight} alt="banner-right" className="banners__item" />
       </div>
 
-      <div>
-        <div className="container carousel__content">
-          <h1 className="carousel__title">New arrivals</h1>
-          <div className="carousel__arrow">
-            <a href="#">
-              <ArrowLeft />
-            </a>
-            <a href="#">
-              <ArrowRight />
-            </a>
-          </div>
-        </div>
-        <MainCarouselCopy />
+      <div className="container">
+          <h1 className="glide__title">Our picks for you</h1>
+          <GlideCarousel/>
       </div>
 
       <section className="s-about container">
