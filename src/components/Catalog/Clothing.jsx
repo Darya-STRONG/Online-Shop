@@ -29,7 +29,7 @@ const Clothing = () => {
         </div>
         <div className='clothing'>
           {clothing && clothing.map(({title,description,price,image}, index) => 
-              <div>
+              <div key={index}>
                 <img className='clothing__image' src={`${image}`} alt="" />
 
                 <div className='clothing__content'>

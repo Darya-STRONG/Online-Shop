@@ -69,7 +69,7 @@ function Main() {
 
       <div className="container">
           <h1 className="glide__title">Our picks for you</h1>
-          <GlideCarousel/>
+          <GlideCarousel className="glide2"></GlideCarousel>
       </div>
 
       <section className="s-about container">

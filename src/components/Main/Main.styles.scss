@@ -127,16 +127,16 @@
 }
 
 .glide {
-  &__slide {
-    width: 255px !important;
-    position: relative;
-    margin-left: 20px;
+  // &__slide {
+  //   width: 255px !important;
+  //   position: relative;
+  //   margin-left: 20px;
     
-  }
-  &__slides{
-    justify-content: space-between;
-    // width: 1110px !important; 
-  }
+  // }
+  // &__slides{
+  //   justify-content: space-between;
+  //   // width: 1110px !important; 
+  // }
   &__title {
     padding-top: 100px;
     padding-bottom: 30px;

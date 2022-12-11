@@ -1,9 +1,10 @@
 import React from "react";
 import "./Navbar.scss";
+import Search from "./Search";
+import { useSelector } from "react-redux";
 
 import { Down } from "../../assets/img/icons";
-import { Search } from "../../assets/img/icons";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -36,11 +37,7 @@ function Navbar() {
           </div>
         </ul>
       </div>
-
-      <div className="navbar__right">
-        <Search />
-        <p>Search for...</p>
-      </div>
+        <Search/>
     </div>
   );
 }

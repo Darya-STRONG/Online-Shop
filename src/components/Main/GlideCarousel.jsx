@@ -19,12 +19,12 @@ import { ArrowRight } from "../../assets/img/icons";
 
 const glideConfig = {
   perView:4,
-  startAt:0,
-  type:"slider",
+  // startAt:0,
+  // type:"slider",
 }
 
-const GlideCarousel = () => {
-  const slider = new Glide(".glide", glideConfig);
+const GlideCarousel = ({className = 'glide'}) => {
+  const slider = new Glide(`.${className}`, glideConfig);
   const [products, setProduct] = useState([]);
   
   useEffect(()=>{
@@ -39,7 +39,7 @@ const GlideCarousel = () => {
 
    return (
     <div className="container">
-      <div className="glide">
+      <div className={className}>
         <div className="glide__arrows" data-glide-el="controls">
           <button className="glide__arrow glide__arrow--left" data-glide-dir="<"><ArrowLeft/></button>
           <button className="glide__arrow glide__arrow--right" data-glide-dir=">"><ArrowRight/></button>

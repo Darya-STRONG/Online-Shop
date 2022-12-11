@@ -1,4 +1,3 @@
-import React from 'react';
 import {Link,Outlet} from 'react-router-dom';
 
 import Header from "../components/Header";
@@ -6,12 +5,14 @@ import Main from "../components/Main";
 import Footer from "../components/Footer";
 
 
-function Home() {
+const Layout = () => {
   return (
     <>
-      <Main/>
+      <Header/>
+      <Outlet/>
+      <Footer/>
     </>
   );
 }
 
-export default Home;
+export {Layout};
