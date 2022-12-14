@@ -34,12 +34,11 @@
 
   display: inline-block;
   position: absolute;
+  right: 12px;
   border-style: none;
   border-radius: 50%;
   width: 24px;
   height: 24px;
-  top: 12px;
-  right: 12px;
 }
 
 .card_four__content{
@@ -127,11 +126,10 @@
 }
 
 .glide {
-  // &__slide {
-  //   width: 255px !important;
-  //   position: relative;
-  //   margin-left: 20px;
-    
+
+  &__slide {
+    position: relative;
+  }  
   // }
   // &__slides{
   //   justify-content: space-between;

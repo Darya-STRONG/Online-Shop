@@ -3,12 +3,13 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { clothingLoading, clothingLoadingSuccess,clothingLoadingFailed } from "../../store/actions/clothingActions";
 import { getClothing } from "../../api/clothing";
-import spinner from "../Catalog/spinner.svg";
+import spinner from "../../assets/img/spinner.svg";
+import Loader from '../Loader';
 
 
 const Clothing = () => {
   const dispatch = useDispatch();
-  const {loading, error, clothing} = useSelector((store)=> store.clothing)
+  const {loading, error, clothing} = useSelector((store)=> store.clothing);
 
   useEffect(()=> {
     dispatch(clothingLoading(true));
@@ -25,11 +26,11 @@ const Clothing = () => {
         <h1>New in</h1>
         <p>1403 items</p>
         <div className="spinner" >
-          {loading && <img src={spinner} alt="spinner"/>}
+          {loading && <Loader/>}
         </div>
         <div className='clothing'>
-          {clothing && clothing.map(({title,description,price,image}, index) => 
-              <div key={index}>
+          {clothing && clothing.map(({title,description,price,image,id}) => 
+              <div key={`clothingItems_${id}`}>
                 <img className='clothing__image' src={`${image}`} alt="" />
 
                 <div className='clothing__content'>

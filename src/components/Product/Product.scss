@@ -1,0 +1,149 @@
+.product {
+  &__loader {
+    display: flex;
+  }
+  &__choices {
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+    padding-top: 12px;
+
+    &__text {
+      color: #6E6D74;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      &-patterned {
+        color: #4A4951;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        padding-left: 6px;
+      }
+    }
+  }
+  &__size {
+    color: #6E6D74;
+    padding-top: 30px;
+    display: flex;
+    column-gap: 213px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    &-line {
+      text-decoration-line:underline;
+    }
+    &-inp {
+      width: 350px;
+      height: 40px;
+      padding: 12px;
+      margin-top: 12px;
+    }
+  }
+
+  &__choice {
+    clip-path: circle(50%);
+    height: 50px;
+    width: 50px;
+    &-red {
+      background: red;
+    }
+    &-white {
+      background:violet ;
+    }
+  }
+  &__card {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 40px;
+  }
+
+  &__part-right {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  &__text {
+    color: #6E6D74;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  &__title {
+    color: #32313A;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    width: 300px;
+  }
+  &__price {
+    display: flex;
+    column-gap: 10px;
+    &-discount {
+      color: #DA2E3F;
+      font-family: 'Open Sans';
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+    }
+    &-basic {
+      color: #9F9EA3;
+      text-decoration-line: line-through;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+  }
+  &__add {
+    display: flex;
+    margin-top: 31px;
+    column-gap: 8px;
+
+    &__heart-favorites {
+      position: static;
+      width: 42px;
+      height: 42px;
+    }
+    &-cart {
+      background: #32313A;
+      width: 300px;
+      height: 40px;
+      color: #E6E5E8;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+  }
+
+}
+
+.breadcrumbs {
+  display: flex;
+  column-gap: 8px;
+  margin-top: 24px;
+}
+.breadcrumb {
+  color: #6E6D74;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+

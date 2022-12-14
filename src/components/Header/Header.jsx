@@ -46,17 +46,6 @@ const Header = () => {
           <Navbar />
         </div>
       </div>
-
-      <div className="header__bottom">
-        <div className="header__bottom container-stock">
-          <p className="container-stock__text">
-            Up to 50% off all dresses when use code DRESSLOVER
-          </p>
-          <a className="container-stock__button" href="/">
-            Shop dresses
-          </a>
-        </div>
-      </div>
     </div>
   );
 };

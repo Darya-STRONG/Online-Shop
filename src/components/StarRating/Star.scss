@@ -1,0 +1,20 @@
+.star {
+  cursor: pointer;
+  float: left;
+  transition: 1.0s;
+  }
+.star-rating {
+    display: flex;
+    column-gap: 4px;
+}
+  
+path:hover {
+    fill:#32313A;
+    stroke:#32313A;
+  }
+  
+.star.selected path {
+    fill:#32313A;
+    stroke:#32313A;
+  }
+  

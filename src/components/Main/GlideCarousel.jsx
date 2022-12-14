@@ -20,7 +20,7 @@ import { ArrowRight } from "../../assets/img/icons";
 const glideConfig = {
   perView:4,
   // startAt:0,
-  // type:"slider",
+  type:"carousel",
 }
 
 const GlideCarousel = ({className = 'glide'}) => {
