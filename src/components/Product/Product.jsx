@@ -3,18 +3,18 @@ import { useParams } from  "react-router-dom";
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
 
-import productImg from "../../assets/img/productImg/product.png";
 import {HeartFavorites} from '../../assets/img/icons';
 import Loader from "../Loader";
 import StarRating from "../../components/StarRating/StarRange";
-
+import GlideCarousel from '../Main/GlideCarousel';
 
 const Product = () => {
   const [loading, setLoading] = useState(true);
-  const [productData, setProductData] = useState([]);
+  const [productData, setProductData] = useState({});
   const { id } = useParams();
 
   useEffect(() => {
+    setLoading(true);
     axios.get(`https://fakestoreapi.com/products/${id}`).then(({data}) => {
       setProductData(data);
       setLoading(false);
@@ -34,18 +34,17 @@ const Product = () => {
     </div>
     <div className="product__card">
       <div className="product__part-left">
-        <img src={productImg} alt="productImg" />
+        <img src={image} alt="productImg" />
       </div>
       <div className="product__part-right">
-        <p className='product__text'>Misguided</p>
+        <p className='product__text'>{category}</p>
         <h3 className='product__title'>{title}</h3>
         <div className='rating'>
-          <StarRating totalStars={5}/>
-          <p className='text'></p>
+          <StarRating totalStars={5} rate={Math.round(rating?.rate)} count={rating?.count}/>
         </div>
         
         <div className='product__price'>
-          <p className='product__price-discount'>$44.90</p>
+          <p className='product__price-discount'>{price}</p>
           <p className='product__price-basic'>$62.90</p>
         </div>
         <div className="choices">
@@ -55,7 +54,10 @@ const Product = () => {
             <div className='product__choice product__choice-white'></div>
           <div/>
         </div>
-
+        <div className='product__description'>
+            <h1>Product details</h1>
+            <p className='product__description-text'>{description}</p>
+        </div>
         <div className="product__size">
           <p>Select size:</p>
           <p className='product__size-line'>Size guide</p>
@@ -66,10 +68,13 @@ const Product = () => {
           <button className="product__add__heart-favorites heart-favorites">{<HeartFavorites/>}</button>
         </div>
         </div>
+        <div>
+        </div>
       </div>
     <div>
       </div>
     </div>
+    <GlideCarousel className="glide3"></GlideCarousel>
   </div>
   )
 

@@ -1,26 +1,11 @@
 import './Clothing.scss';
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { clothingLoading, clothingLoadingSuccess,clothingLoadingFailed } from "../../store/actions/clothingActions";
-import { getClothing } from "../../api/clothing";
-import spinner from "../../assets/img/spinner.svg";
+import { useSelector } from "react-redux";
 import Loader from '../Loader';
 
 
 const Clothing = () => {
-  const dispatch = useDispatch();
   const {loading, error, clothing} = useSelector((store)=> store.clothing);
-
-  useEffect(()=> {
-    dispatch(clothingLoading(true));
-    getClothing()
-    .then(({data}) => {
-      dispatch(clothingLoadingSuccess(data))
-    })
-    .catch((error)=> {
-      dispatch(clothingLoadingFailed(error.message));
-    })
-  },[])
+  
   return (
         <div className="container">
         <h1>New in</h1>
