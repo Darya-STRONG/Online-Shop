@@ -1,0 +1,33 @@
+@keyframes scroll {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0)
+  }
+}
+
+.discount {
+  background-color: #ED83A8;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  height: 60px;
+  white-space: nowrap;
+  overflow: hidden;
+
+  &__text {
+    padding-left: 100%;
+    animation: scroll 30s infinite linear;
+  }
+
+  &__link {
+    color: #fff;
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration: underline;
+  }
+}

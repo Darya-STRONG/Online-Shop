@@ -2,16 +2,22 @@ import './Product.scss';
 import { useParams } from  "react-router-dom";
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
-
 import {HeartFavorites} from '../../assets/img/icons';
 import Loader from "../Loader";
 import StarRating from "../../components/StarRating/StarRange";
 import GlideCarousel from '../Main/GlideCarousel';
+import { cardAdd } from '../../store/actions/cartActions';
+import { useDispatch } from 'react-redux';
+import { SizeBar } from "./SizeBar";
 
 const Product = () => {
   const [loading, setLoading] = useState(true);
   const [productData, setProductData] = useState({});
   const { id } = useParams();
+  const [size, setSize] = useState(null);
+
+
+  const dispatch = useDispatch();
 
   useEffect(() => {
     setLoading(true);
@@ -62,9 +68,13 @@ const Product = () => {
           <p>Select size:</p>
           <p className='product__size-line'>Size guide</p>
         </div>
-        <input className='product__size-inp' type="text" placeholder='Size'/>
+        <SizeBar setSize = {setSize} size = {size}/>
         <div className='product__add'>
-          <button className='product__add-cart'>Add to cart</button>
+          <button className="product__add-cart" onClick = {()=> {
+            dispatch(cardAdd({ ...productData, size : size, costDelivery:10, count:1, itemId: new Date().getTime(),}));
+            
+
+          }}>Add to cart</button>
           <button className="product__add__heart-favorites heart-favorites">{<HeartFavorites/>}</button>
         </div>
         </div>

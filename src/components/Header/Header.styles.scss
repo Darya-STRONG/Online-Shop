@@ -5,6 +5,7 @@
     background:#32313A;
     width: 100%;
     padding:22px 0px;
+
   &__nav {
     display: flex;
     cursor: pointer;
@@ -15,8 +16,6 @@
     }
   }
   &__bottom {
-    display: flex;
-    justify-content: center;
     column-gap: 20px;
     padding: 18px 0;
     background: #ED83A8;
@@ -52,6 +51,76 @@
     font-weight: 900;
   }
 }
+
+.favorites {
+
+  &__titel {
+    margin-bottom: 8px;
+  }
+
+  &__count {
+    font-weight: 400;
+    font-size: 12px;
+    color: #6E6D74;
+    margin-bottom: 20px;
+  }
+
+  &__card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__without-content {
+    text-align: center;
+    line-height: 25px;
+    padding: 220px 0;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: #56555D;
+  }
+
+  &__button {
+    padding: 10px 125px;
+    margin-top: 30px;
+  }
+}
+
+.title {
+  font-family: 'Merriweather';
+  font-weight: 700;
+  font-size: 26px;
+  color: #32313A;
+}
+
+.header {
+  background-color: #32313A;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100px;
+  width: 100%;
+
+  &__icon svg:hover {
+    fill: #ED83A8;
+  }
+
+  a {
+    height: 20px;
+  }
+}
+
 
 
 

@@ -43,3 +43,67 @@ button {outline: none;}
   max-width: 1110px;
   width: 100%;
 }
+
+.btn {
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  background: #32313A;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s linear;
+
+  &:hover {
+    fill: #ED83A8;
+  }
+}
+
+.new {
+  width: 825px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  &__img-back {
+    height: 240px;
+    background-size: cover;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__head {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    margin-left: 0;
+  }
+
+  &__head-text {
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  &__text {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    color: #32313A;
+  }
+
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.line {
+  border-top: 1px solid #E6E5E8;
+}

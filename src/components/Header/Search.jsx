@@ -69,7 +69,7 @@ const Search = () => {
           {searchResult.map(({title,id},index) => {
             return !! id ?(
               <Link to={`product/${id}`} onClick={closeSearch} key={`srch_${index}`}>
-                <p>{title}</p>;
+                <p>{title}</p>
               </Link>):(<p key={`srch_${index}`}>{title}</p>)
             
           })}

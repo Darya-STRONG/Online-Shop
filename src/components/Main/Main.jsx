@@ -1,6 +1,16 @@
 import React from "react";
 import "./Main.styles.scss";
 import GlideCarousel from "./GlideCarousel";
+import {
+  clothingLoading,
+  clothingLoadingSuccess,
+  clothingLoadingFailed,
+} from "../../store/actions/clothingActions";
+import Loader from "../Loader";
+
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import {getClothing} from "../../api/clothing";
 // import MainCarouselCopy from "./MainCarouselCopy";
 
 import { ArrowLeft } from "../../assets/img/icons";
@@ -20,18 +30,28 @@ import BannerBottom from "../../assets/img/main-banners/bottom-banners.jpg";
 import SectionAbout from "../../assets/img/section-about.jpg";
 
 import MainBrands from "./MainBrands";
+import  Discount from "../Header/Discount";
+
 
 function Main() {
+
+  const dispatch = useDispatch();
+  const { loading, error, clothing } = useSelector((store) => store.clothing);
+
+  useEffect(() => {
+    dispatch(clothingLoading());
+    getClothing()
+      .then(({ data }) => {
+        dispatch(clothingLoadingSuccess(data));
+      })
+      .catch((error) => dispatch(clothingLoadingFailed(error.message)));
+  }, [dispatch]);
+
   return (
     <div>
       <div className="header__bottom">
         <div className="header__bottom container-stock">
-          <p className="container-stock__text">
-            Up to 50% off all dresses when use code DRESSLOVER
-          </p>
-          <a className="container-stock__button" href="/">
-            Shop dresses
-          </a>
+          <Discount />
         </div>
       </div>
       <div className=" container-main">
@@ -68,8 +88,10 @@ function Main() {
         </div>
       </div>
       <div className="container">
-        <h1 className="glide__title">New arrivals</h1>
-        <GlideCarousel/>
+        {loading && <Loader/>}
+        {clothing && <GlideCarousel prod={clothing}  head="Our picks for you"></GlideCarousel>}
+        {error && error}
+
       </div>
 
       <div className="container banner__center">
@@ -78,8 +100,9 @@ function Main() {
       </div>
 
       <div className="container">
-          <h1 className="glide__title">Our picks for you</h1>
-          <GlideCarousel className="glide2"></GlideCarousel>
+          {loading && <Loader/>}
+          {clothing && <GlideCarousel prod={clothing}  head="New arrivals" className="glide2"></GlideCarousel>}
+          {error && error}
       </div>
 
       <section className="s-about container">

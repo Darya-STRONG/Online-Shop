@@ -8,11 +8,11 @@ import { NavLink, Outlet } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="navbar">
+    <div className="navbar navbar__position">
       <div className="navbar__left">
         <ul className="navbar__left navbar__list">
           <div className="navbar__item">
-          <NavLink className="navbar__link" to="/New-in">New in</NavLink>
+          <NavLink className="navbar__link" to="/NewIn">New in</NavLink>
             <Down />
           </div>
           <div className="navbar__item">

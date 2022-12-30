@@ -9,7 +9,6 @@
   font-family: 'Open Sans Semibold';
   font-weight: 600;
 
-
   &__left {
     display: flex;
     justify-content: space-between;
@@ -41,5 +40,84 @@
     overflow: hidden;
     white-space:nowrap;
     text-overflow: ellipsis;
+    padding: 5px 5px 5px 5px;
+    &:hover {
+      color: palegreen;
+    }
+  }
+}
+
+
+.nav {
+
+  &__blok {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__elem {
+    margin: 16px 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    padding-right: 32px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #32313A;
+  }
+
+  .but-down {
+    margin-left: 5px;
+  }
+}
+
+.search {
+  display: flex;
+  position: relative;
+
+  &__icon {
+    margin-right: 10px;
+
+  }
+
+  &__inp {
+    border: none;
+    width: 73px;
+    height: 20px;
+    outline: none;
+    font-size: 13px;
+
+    &::placeholder {
+      color: #32313A;
+    }
+  }
+
+  &__result {
+    position: absolute;
+    width: 200px;
+    left: 0;
+    top: 25px;
+    z-index: 5;
+    border-radius: 3px;
+    background-color: burlywood;
+    opacity: 0.6;
+  }
+
+  a {
+    text-decoration: none;
+    color: #32313A;
+  }
+
+  &__result-inner {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 10px;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

@@ -1,43 +1,33 @@
 import React from "react";
 import "./Header.styles.scss";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
+import "./Header.styles.scss";
 
 import { Heart } from "../../assets/img/icons";
 import { ShoppingBag } from "../../assets/img/icons";
 import { User } from "../../assets/img/icons";
+import { LogoSvg } from "../../assets/img/icons";
 
 const Header = () => {
   return (
     <div>
-      <header className="header">
-        <div className="container">
-          <div className="header__top">
-            <div className="header__nav">
-              <div className="header__nav">
-                <h1 className="logo">
-                  <span className=" logo logo-bold">dress</span>note
-                </h1>
-              </div>
-              <ul className="header__nav header-nav">
-                <li className="header-nav__item">
-                  <a href="" className="header-nav__link">
-                    {<Heart />}
-                  </a>
-                </li>
 
-                <li className="header-nav__item">
-                  <a href="" className="header-nav__link">
-                    {<ShoppingBag />}
-                  </a>
-                </li>
-
-                <li className="header-nav__item">
-                  <a href="" className="header-nav__link">
-                    {<User />}
-                  </a>
-                </li>
-              </ul>
-            </div>
+<header className="header header__position">
+        <div className="header__top container">
+          <div className="header__logo">
+            <Link to="/">
+              <LogoSvg />
+            </Link>
+          </div>
+          <div className="pagination">
+            <Link to="/favorite">
+              <Heart className="pagination__icon" />
+            </Link>
+            <User className="pagination__icon" />
+            <Link to="/bag">
+              <ShoppingBag className="pagination__icon pagination__icon_pos" />
+            </Link>
           </div>
         </div>
       </header>

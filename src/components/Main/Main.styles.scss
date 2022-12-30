@@ -1,8 +1,6 @@
 @import url("../../scss/base.scss");
 @import url("../../scss/styles.scss");
 
-@import "/node_modules/@glidejs/glide/src/assets/sass/glide.core";
-@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
 .container-main {
   background-image: url("../../assets/img/main-banners/top-banner.jpg");
@@ -39,6 +37,13 @@
   border-radius: 50%;
   width: 24px;
   height: 24px;
+}
+
+// .heart-favorites svg:hover{
+//   fill: #DA2E3F;
+// }
+.heart-favorites_active svg {
+  fill: #DA2E3F;
 }
 
 .card_four__content{
@@ -125,36 +130,7 @@
   color: #32313A;
 }
 
-.glide {
-
-  &__slide {
-    position: relative;
-  }  
-  // }
-  // &__slides{
-  //   justify-content: space-between;
-  //   // width: 1110px !important; 
-  // }
-  &__title {
-    padding-top: 100px;
-    padding-bottom: 30px;
-  }
-  &__arrows {
-    display: flex;
-    justify-content: flex-end;
-  }
-  &__arrow{
-    position: static;
-    box-shadow: none;
-  }
+.loader {
+  display: flex;
+  margin: 0 auto;
 }
-
-.fix-img {
-  max-width: 100%;
-}
-
-
-
-
-
-

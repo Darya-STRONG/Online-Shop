@@ -1,8 +1,186 @@
 
+export const TrashSvg = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+    <path
+      stroke="#6E6D74"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      d="M2.5 5h15M6.667 5V3.333a1.667 1.667 0 0 1 1.666-1.666h3.334a1.667 1.667 0 0 1 1.666 1.666V5m2.5 0v11.667a1.667 1.667 0 0 1-1.666 1.666H5.833a1.667 1.667 0 0 1-1.666-1.666V5h11.666Z"
+    />
+  </svg>
+);
+
+export const DecrSvg = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+    <path
+      stroke="#86858B"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      d="M4.343 10h11.314"
+    />
+  </svg>
+);
+export const IncrSvg = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+    <path
+      stroke="#86858B"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      d="M10 4.343v11.314M4.343 10h11.314"
+    />
+  </svg>
+);
+export const CrossSvg = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+    <path
+      stroke="#86858B"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      d="m14 6-8 8M6 6l8 8"
+    />
+  </svg>
+);
+
+export const WitoutItemSvg = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="none">
+    <path fill="#fff" d="M0 0h80v80H0z" />
+    <path
+      fill="#E9EBEE"
+      fillRule="evenodd"
+      d="M43.337 6.758c9.396-1.783 20.35-3.015 27.379 3.47 7.142 6.588 6.19 17.662 6.059 27.378-.128 9.529-.403 19.575-6.787 26.65-6.642 7.361-16.737 10.29-26.65 10.407-10.043.119-19.89-2.977-27.287-9.77C8.329 57.8 1.044 47.908 2.983 37.605c1.833-9.746 13.83-12.623 21.709-18.646C30.826 14.271 35.75 8.198 43.337 6.758Z"
+      clipRule="evenodd"
+    />
+    <path
+      stroke="#32313A"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M59.453 26.536a12.134 12.134 0 0 0-17.12 0l-2.334 2.326-2.332-2.326a12.125 12.125 0 0 0-8.56-3.535c-3.212 0-6.29 1.272-8.561 3.535A12.051 12.051 0 0 0 17 35.071c0 3.2 3.151 8.368 5.422 10.632L39.999 63l17.665-17.297c1.124-1.12 3.805-4.549 4.414-6.013a12.036 12.036 0 0 0-2.625-13.154Z"
+    />
+    <path
+      stroke="#32313A"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      d="M36.52 46.17s1.138-2.162 3.795-2.162 3.795 2.162 3.795 2.162"
+    />
+    <ellipse
+      cx="47.904"
+      cy="37.595"
+      fill="#32313A"
+      stroke="#32313A"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      rx="1.627"
+      ry="1.622"
+    />
+    <ellipse
+      cx="32.722"
+      cy="37.595"
+      fill="#32313A"
+      stroke="#32313A"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      rx="1.627"
+      ry="1.622"
+    />
+    <g
+      stroke="#86858B"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      opacity=".7"
+    >
+      <path d="M40.25 15.25v-4.5M44.637 16.441l1.902-4.078M35.898 16.441l-1.902-4.078M23.505 63v-3M22 61.51h3M70.505 53v-3M69 51.51h3" />
+      <circle cx="61.5" cy="16.5" r="1.5" />
+      <circle cx="51" cy="67" r="1" fill="#86858B" />
+      <circle cx="15" cy="16" r="2" />
+    </g>
+    <path
+      fill="#fff"
+      fillRule="evenodd"
+      d="M11.215 36.277c1.825.606 2.155 2.786 2.253 4.707.104 2.04.162 4.528-1.745 5.263-1.956.755-3.779-.969-5.038-2.646-1.151-1.532-1.815-3.508-.807-5.137 1.118-1.808 3.32-2.857 5.337-2.187Z"
+      clipRule="evenodd"
+    />
+    <path
+      fill="#E9EBEE"
+      fillRule="evenodd"
+      d="M12.549 66.865c1.044-.309 2.07.224 2.753 1.071.88 1.093 1.882 2.522 1.06 3.66-.838 1.157-2.545.759-3.872.23-1.068-.426-1.862-1.363-1.848-2.512.014-1.144.81-2.125 1.907-2.449Z"
+      clipRule="evenodd"
+    />
+    <path
+      fill="#fff"
+      fillRule="evenodd"
+      d="M12.701 31.013c.914-.065 1.967.09 2.3.943.379.974-.025 2.099-.884 2.696-.81.564-1.913.41-2.668-.225-.624-.525-.498-1.436-.218-2.202.242-.659.77-1.162 1.47-1.212Z"
+      clipRule="evenodd"
+    />
+  </svg>
+);
+
+export const LogoSvg = ({ className }) => (
+  <svg
+    className={className}
+    xmlns="http://www.w3.org/2000/svg"
+    width="164"
+    height="16"
+    fill="none"
+  >
+    <path
+      className={className}
+      fill="#fff"
+      d="M6.103 15.78c5.245 0 8.423-2.934 8.423-7.799 0-4.85-3.178-7.768-8.373-7.768H0V15.78h6.103ZM3.64 12.96V3.033h2.32c3.228 0 4.934 1.49 4.934 4.948 0 3.474-1.706 4.979-4.942 4.979H3.64ZM20.3 15.78h3.64V10.26h2.655l3.262 5.519h4.018l-3.657-6.05c1.96-.76 3.043-2.304 3.043-4.432 0-3.094-2.26-5.085-6.17-5.085H20.3V15.78Zm3.64-8.164V2.904h2.454c2.101 0 3.118.843 3.118 2.394 0 1.543-1.017 2.318-3.102 2.318h-2.47ZM38.911 15.78h11.634v-2.714h-7.994V9.349h7.364V6.636H42.55v-3.71h7.96V.213h-11.6V15.78ZM65.822 4.69h3.488C69.26 1.915 66.738 0 62.905 0c-3.775 0-6.54 1.885-6.523 4.713-.009 2.295 1.782 3.61 4.69 4.24l1.875.427c1.874.41 2.917.896 2.925 1.945-.008 1.14-1.202 1.916-3.051 1.916-1.892 0-3.253-.79-3.371-2.349h-3.522C56.02 14.26 58.685 16 62.863 16c4.203 0 6.674-1.817 6.683-4.667-.009-2.592-2.17-3.968-5.162-4.576l-1.546-.334c-1.497-.312-2.75-.814-2.724-1.93 0-1.004.984-1.741 2.766-1.741 1.74 0 2.807.714 2.942 1.938ZM84.41 4.69H87.9C87.849 1.915 85.327 0 81.493 0c-3.774 0-6.54 1.885-6.523 4.713-.008 2.295 1.782 3.61 4.691 4.24l1.875.427c1.874.41 2.916.896 2.925 1.945-.008 1.14-1.202 1.916-3.052 1.916-1.89 0-3.253-.79-3.37-2.349h-3.523C74.61 14.26 77.274 16 81.451 16c4.204 0 6.675-1.817 6.683-4.667-.008-2.592-2.168-3.968-5.161-4.576l-1.547-.334c-1.496-.312-2.749-.814-2.723-1.93 0-1.004.983-1.741 2.765-1.741 1.74 0 2.808.714 2.942 1.938ZM107.858.213h-1.547v13.05h-.134L95.972.214H94.45V15.78h1.572V2.744h.134l10.172 13.036h1.53V.213ZM129.626 7.996c0-4.872-3.093-7.996-7.448-7.996-4.346 0-7.439 3.132-7.439 7.996 0 4.865 3.085 7.996 7.439 7.996 4.355 0 7.448-3.124 7.448-7.996Zm-1.53 0c.009 4.188-2.522 6.659-5.918 6.659-3.404 0-5.918-2.486-5.918-6.659 0-4.196 2.539-6.658 5.918-6.658 3.396 0 5.918 2.47 5.918 6.658ZM134.746 1.49h5.456v14.29h1.572V1.49h5.455V.213h-12.483V1.49ZM153.845 15.78H164v-1.277h-8.583V8.627h7.885V7.35h-7.885V1.49h8.415V.213h-9.987V15.78Z"
+    />
+  </svg>
+);
+
+export const ArrowSvg = ({ className, hover, setHover }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    onMouseEnter={(e) => {
+      setHover(e.target);
+    }}
+    onMouseLeave={(e) => {
+      setHover(null);
+    }}
+    className={className}
+    width="26"
+    height="16"
+    fill="none"
+  >
+    <path
+      stroke={hover ? "#32313A" : "#B5B5BC"}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M25 8H1M8 15 1 8l7-7"
+    />
+  </svg>
+);
+
+export const SlideHeartSvg = ({ className }) => (
+  <svg
+    className={className}
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    fill="none"
+  >
+    <rect width="24" height="24" fill="#F7F7F9" rx="12" />
+    <path
+      stroke="#6E6D74"
+      d="M17.893 7.873a3.666 3.666 0 0 0-5.187 0L12 8.58l-.707-.707a3.668 3.668 0 0 0-5.187 5.187l.707.707L12 18.953l5.186-5.186.707-.707a3.668 3.668 0 0 0 0-5.187v0Z"
+    />
+  </svg>
+);
+
 export const StarRatingImg = () => {
   return (
         <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_215_1297)">
+          <g clipPath="url(#clip0_215_1297)">
           <path d="M8 2.04254L9.854 5.87844L14 6.49733L11 9.48148L11.708 13.6973L8 11.7058L4.292 13.6973L5 9.48148L2 6.49733L6.146 5.87844L8 2.04254Z" fill="#E6E5E8" stroke="#E6E5E8" strokeWidth="1.56667" strokeLinecap="round"/>
           </g>
           <defs>
