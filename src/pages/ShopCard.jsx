@@ -1,10 +1,29 @@
+import { useState, useEffect } from "react";
 import BagClear from "../components/bag-components/BagClear";
 import BagItems from "../components/bag-components/BagItems";
 import BagOrder from "../components/bag-components/BagOrder";
 import { useSelector } from "react-redux";
+import { useDispatch } from 'react-redux';
+
 
 const ShopBag = () => {
+  const [ subtotal, setSubtotal] = useState(0);
   const shoppingCart = useSelector((store) => store.cart);
+
+  useEffect(() => {
+    const sum = shoppingCart.reduce((accumulator, item) => {
+      return accumulator + item.price * item.count; 
+  }, 0);
+  
+   const shipingSum = shoppingCart.reduce((accumulator, item) => {
+    return accumulator + item.costDelivery * item.count; 
+  }, 0);
+
+
+
+   setSubtotal({sum, shipingSum});
+  }, [shoppingCart]);
+  
   
   return (
     <div className="line">
@@ -19,14 +38,14 @@ const ShopBag = () => {
                 <span className="bag__title-text quantity">Quantity</span>
                 <span className="bag__title-text total">Total</span>
               </div>
-              {shoppingCart.map((item) => {
-                return <BagItems key={`bag_srh${item}`} />;
+              {shoppingCart.map((item, index) => {
+                return <BagItems key={`bag_srh${index}`} {...item} />;
               })}
-              <BagClear />
+              <BagClear subtotal = {subtotal.sum} />
             </div>
           </div>
           <div className="shop-bag__col2">
-            <BagOrder />
+            <BagOrder subtotal = {subtotal.sum} shipingSum = {subtotal.shipingSum}/>
           </div>
         </div>
         {/* <div className="shop-bag__slider">

@@ -9,6 +9,7 @@ import GlideCarousel from '../Main/GlideCarousel';
 import { cardAdd } from '../../store/actions/cartActions';
 import { useDispatch } from 'react-redux';
 import { SizeBar } from "./SizeBar";
+import { cartAdd } from '../../store/actions/cartActions';
 
 const Product = () => {
   const [loading, setLoading] = useState(true);
@@ -71,9 +72,8 @@ const Product = () => {
         <SizeBar setSize = {setSize} size = {size}/>
         <div className='product__add'>
           <button className="product__add-cart" onClick = {()=> {
-            dispatch(cardAdd({ ...productData, size : size, costDelivery:10, count:1, itemId: new Date().getTime(),}));
+            dispatch(cartAdd({ ...productData, size : size, costDelivery:10, count:1, itemId: new Date().getTime(),}));
             
-
           }}>Add to cart</button>
           <button className="product__add__heart-favorites heart-favorites">{<HeartFavorites/>}</button>
         </div>

@@ -1,6 +1,9 @@
 import {createAction} from "@reduxjs/toolkit";
 
-const cardAdd = createAction('CART_ADD');
-const favoritesRemove = createAction('FAVORITES_REMOVE');
+const cartAdd = createAction('CART_ADD');
+const cartItemPatch = createAction('CART_ITEM_PATCH');
+const cartRemove = createAction('CART_REMOVE');
+const cartRemoveAll = createAction('CART_REMOVE_ALL');
 
-export {cardAdd };
+
+export {cartAdd, cartItemPatch, cartRemoveAll };

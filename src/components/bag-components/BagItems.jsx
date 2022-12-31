@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { DecrSvg, IncrSvg, CrossSvg } from "../../assets/img/icons";
 import img from "../../components/bag-components/image/Swimwear.png";
+import { cartItemPatch } from "../../store/actions/cartActions";
+import { useDispatch } from "react-redux";
 
-const BagItems = ({image, category, title, size, price, count:itemCount}) => {
+const BagItems = ({image, category, title, size, price, count:itemCount, itemId}) => {
   const [count, setCount] = useState(itemCount);
+  const dispatch = useDispatch();
   return (
     <div className="bag__items">
       <div className="bag__item">
@@ -33,6 +36,7 @@ const BagItems = ({image, category, title, size, price, count:itemCount}) => {
               onClick={() => {
                 if (count >= 2) {
                   setCount(count - 1);
+                  dispatch(cartItemPatch({itemId, count: count - 1}));
                 }
               }}
             >
@@ -43,6 +47,7 @@ const BagItems = ({image, category, title, size, price, count:itemCount}) => {
               className="bag-quantity__incr butn-shop"
               onClick={() => {
                 setCount(count + 1);
+                dispatch(cartItemPatch({itemId,count: count + 1}));
               }}
             >
               <IncrSvg />

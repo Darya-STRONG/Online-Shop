@@ -9,7 +9,7 @@ const store = configureStore({
     clothing: clothingReducer,
     favorites: favoritesReducer,
     cart: cartReducers,
-    count: countReducer,
+    // count: countReducer,
 
   },
 });
