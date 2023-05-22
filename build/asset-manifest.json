@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e2f7c6eb.css",
+    "main.js": "/static/js/main.07f91dfc.js",
+    "static/js/787.a8723d96.chunk.js": "/static/js/787.a8723d96.chunk.js",
+    "static/media/banner-left.jpg": "/static/media/banner-left.673cc1ac83d2db5b7782.jpg",
+    "static/media/newInImg.png": "/static/media/newInImg.84bd62f554063bfec327.png",
+    "static/media/banner-right.jpg": "/static/media/banner-right.3e0b9a728a07c940bc81.jpg",
+    "static/media/top-banner.jpg": "/static/media/top-banner.725c4f7bb6323b923506.jpg",
+    "static/media/section-about.jpg": "/static/media/section-about.2659166c6f60d4f9554f.jpg",
+    "static/media/bottom-banners.jpg": "/static/media/bottom-banners.7be2286f3845bd3cc656.jpg",
+    "static/media/tops.jpg": "/static/media/tops.24c6bd59fdeeca4c2431.jpg",
+    "static/media/skirts.jpg": "/static/media/skirts.04915923dcb975cf0a82.jpg",
+    "static/media/bags.jpg": "/static/media/bags.6cccf8b48bbba83804b5.jpg",
+    "static/media/shoes.jpg": "/static/media/shoes.674f7c88dfb0fe0cc036.jpg",
+    "static/media/dresses.jpg": "/static/media/dresses.62497031cf071d4a6c15.jpg",
+    "static/media/Swimwear.png": "/static/media/Swimwear.f460e6cf41886af68a22.png",
+    "static/media/swimwear.jpg": "/static/media/swimwear.4cd967336294ebcb7a33.jpg",
+    "static/media/spinner.svg": "/static/media/spinner.6d6b83ca45ee5d18d30bc0da0c038352.svg",
+    "index.html": "/index.html",
+    "main.e2f7c6eb.css.map": "/static/css/main.e2f7c6eb.css.map",
+    "main.07f91dfc.js.map": "/static/js/main.07f91dfc.js.map",
+    "787.a8723d96.chunk.js.map": "/static/js/787.a8723d96.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2f7c6eb.css",
+    "static/js/main.07f91dfc.js"
+  ]
+}
